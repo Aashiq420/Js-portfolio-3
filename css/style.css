@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #a2aebb;
+  /* background-image: url("boat-sky.jpg"); */
+  background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)),
+    url("images/coding.jpg");
+  height: 100%;
+  background-size: cover;
+}
+.logo span b {
+  font-size: 50px;
+  color: red;
+}
+.logo span {
+  color: #c9daea;
+}
+.navbar ul {
+  margin-top: 10%;
+  display: flex;
+  list-style: none;
+}
+.navbar li {
+  color: #c9daea;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 160%;
+  float: right;
+  padding: 25px 15px 0px 10px;
+}
+.navbar a {
+  color: #c9daea;
+}
+.navbar a :hover {
+  background-color: white;
+  color: black;
+}
+.navbar {
+  margin-left: 10%;
+  padding-right: 20px;
+}
+.logo {
+  /* overflow: hidden; */
+  white-space: nowrap;
+  padding: 10px;
+  font-size: 40px;
+}
+header {
+  background-color: red;
+}
+.fullnav {
+  /* position: sticky; */
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  height: 10vh;
+}
+
+/* landing */
+.landing {
+  margin-top: 5%;
+  height: 80vh;
+}
+.landing .landing-content {
+  color: aliceblue;
+  display: grid;
+  place-items: center;
+}
+/* underline */
+ul {
+  /* margin: 150px auto 0; */
+  padding: 0;
+  list-style: none;
+  display: table;
+  /* width: 600px; */
+  /* text-align: center; */
+}
+li {
+  /* display: table-cell; */
+  position: relative;
+  padding: 15px 0;
+}
+a {
+  color: #fff;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /* letter-spacing: 0.15em; */
+
+  /* display: inline-block; */
+  /* padding: 15px 20px; */
+  position: relative;
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/*stuff jason showed us*/
+@keyframes changeBackground {
+  0% {
+    background: yellow;
+  }
+  33% {
+    background: blue;
+  }
+  66% {
+    background: red;
+  }
+  100% {
+    background: yellow;
+  }
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "heading heading heading" "process1 ";
+}
+
+body {
+  position: relative;
+}
+#preloader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: grey;
+  animation: disappear 5s forwards; /*forwards make it only happen once*/
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes logoPreload {
+  0% {
+    left: 45%;
+    top: 45%;
+    transform: scale(3);
+  }
+  90% {
+    left: 45%;
+    top: 45%;
+    transform: scale(3);
+  }
+  100% {
+  }
+}
