@@ -1,0 +1,242 @@
+/* About */
+.about {
+  background-color: gray;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/* .about .about-content {
+  font-size: 150%;
+  display: grid;
+  justify-content: center;
+} */
+.about-content h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+}
+.about-content {
+  margin-top: 10%;
+  display: grid;
+  justify-content: space-between;
+  place-items: center;
+}
+.about-content span {
+  color: red;
+  text-shadow: 1px 1px black;
+}
+.about-content p {
+  font-size: 120%;
+  width: 58%;
+}
+.about-content h2 {
+  text-decoration: underline;
+  text-decoration-color: red;
+  font-size: 150%;
+}
+.about-content h3 {
+  font-size: 100%;
+}
+.about-info {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+}
+.about-info2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 21%;
+}
+
+.about-right {
+  margin-left: 13%;
+}
+.about-left2 {
+  margin-right: 2%;
+}
+.about-left2 p {
+  width: 87%;
+}
+.about-right2 {
+  margin-left: 5%;
+  margin-right: 6%;
+}
+
+.programming {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* circle stuff */
+.progress-circle {
+  font-size: 20px;
+  margin: 20px;
+  position: relative; /* so that children can be absolutely positioned */
+  padding: 0;
+  width: 5em;
+  height: 5em;
+  background-color: #f2e9e1;
+  border-radius: 50%;
+  line-height: 5em;
+}
+
+.progress-circle:after {
+  border: none;
+  position: absolute;
+  top: 0.35em;
+  left: 0.35em;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  width: 4.3em;
+  height: 4.3em;
+  background-color: grey;
+  content: " ";
+}
+/* Text inside the control */
+.progress-circle span {
+  position: absolute;
+  line-height: 5em;
+  width: 5em;
+  text-align: center;
+  display: block;
+  color: black;
+  z-index: 2;
+}
+.left-half-clipper {
+  /* a round circle */
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  position: absolute; /* needed for clipping */
+  clip: rect(0, 5em, 5em, 2.5em); /* clips the whole left half*/
+}
+/* when p>50, don't clip left half*/
+.progress-circle.over50 .left-half-clipper {
+  clip: rect(auto, auto, auto, auto);
+}
+.value-bar {
+  /*This is an overlayed square, that is made round with the border radius,
+    then it is cut to display only the left half, then rotated clockwise
+    to escape the outer clipping path.*/
+  position: absolute; /*needed for clipping*/
+  clip: rect(0, 2.5em, 5em, 0);
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 0.45em solid red;
+  box-sizing: border-box;
+}
+/* Progress bar filling the whole right half for values above 50% */
+.progress-circle.over50 .first50-bar {
+  /*Progress bar for the first 50%, filling the whole right half*/
+  position: absolute; /*needed for clipping*/
+  clip: rect(0, 5em, 5em, 2.5em);
+  background-color: red;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+.progress-circle:not(.over50) .first50-bar {
+  display: none;
+}
+
+/* Progress bar rotation position */
+
+.progress-circle.p60 .value-bar {
+  transform: rotate(216deg);
+}
+
+.progress-circle.p65 .value-bar {
+  transform: rotate(234deg);
+}
+
+.progress-circle.p70 .value-bar {
+  transform: rotate(252deg);
+}
+
+.progress-circle.p75 .value-bar {
+  transform: rotate(270deg);
+}
+
+/* prog bar width */
+.prog-section {
+  margin: 1%;
+}
+/*  */
+@media screen and (max-width: 1200px) {
+  .about-content p {
+    font-size: 100%;
+    width: 100%;
+  }
+  .about-content h2 {
+    font-size: 130%;
+  }
+  .about-content h3 {
+    font-size: 80%;
+  }
+  .about-info2 {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about-info {
+    display: grid;
+    margin: 0;
+  }
+  .about-info2 {
+    display: grid;
+    margin: 0;
+  }
+  .programming {
+    display: flex;
+    justify-content: center;
+  }
+  .about-info2 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .about-left {
+    margin-left: 30%;
+  }
+  .about-right {
+    margin-left: 13%;
+    margin-right: 14%;
+  }
+  .about-left2 {
+    margin-right: 2%;
+    margin-left: 4%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about-info img {
+    width: 70%;
+  }
+  .about-left {
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about-info img {
+    width: 50%;
+  }
+  .about-left {
+    margin-left: 25%;
+  }
+}
+/* @media screen and (max-width: 700px) {
+  .first-line {
+    display: grid;
+  }
+  .second-line {
+    display: grid;
+  }
+}
+.first-line {
+  display: flex;
+}
+.second-line {
+  display: flex;
+} */
