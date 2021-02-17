@@ -4,6 +4,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* underline */
 ul {
   padding: 0;
