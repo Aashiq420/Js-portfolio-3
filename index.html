@@ -4,47 +4,227 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/icon2.ico" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/testimonial.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+  />
 
     <title>Aashiq Adams - Portfolio</title>
   </head>
   <body>
-    <!-- NAVBAR -->
-    <header>
-      <div class="fullnav">
-        <div class="logo">
-          <span><b>A</b>ashiq <b>A</b>dams</span>
-        </div>
-        <div class="navbar">
-          <ul>
-            <li><a href="">About</a></li>
-            <br />
-            <li><a href="">Portfolio</a></li>
-            <br />
-            <li><a href="">Testimonials</a></li>
-            <br />
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
     <br /><br /><br /><br />
     <!-- LANDING PAGE -->
-    <div class="landing">
+    <div class="landing" id="landing">
+      <!-- NAVBAR -->
+      <header>
+        <div class="fullnav" id="fullnav">
+          <div class="logo">
+            <a href="#landing"
+              ><span><b>A</b>ashiq <b>A</b>dams</span></a
+            >
+          </div>
+          <div class="navbar">
+            <ul>
+              <li id="menu" ><a>☰</a></li>
+              <li><a href="#about">About</a></li>
+              <br />
+              <li><a href="#portfolio">Portfolio</a></li>
+              <br />
+              <li><a href="">Testimonials</a></li>
+              <br />
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- response -->
+
+
+      </header>
+      
+      
+      <!-- END NAVBAR/ START LANDING CONTENT -->
       <div class="landing-content">
-        <h1>Hello There</h1>
-        <h2>My name is Aashiq Adams</h2>
+        <h1>Hello There!</h1>
         <h2>Welcome to my online portfolio</h2>
+        <br><br><br>
+        <!-- links -->
+        <div class="wrapper">
+          <a href="https://github.com/aashiq420" target="_blank">
+            <div class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </div></a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/aashiq-adams-96291499/" target="_blank">
+            <div class="icon linkedin">
+              <div class="tooltip">LinkedIn</div>
+              <span><i class="fab fa-linkedin-in"></i></span>
+            </div></a>
+            &nbsp;&nbsp;&nbsp;
+                  <div class="icon gmail" onclick="display2()">
+                    <div class="tooltip" id="myemail">Email</div>
+                    <span><i class="fas fa-at"></i></span>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;
+            
+                  <div class="icon whatsapp" onclick="display()">
+                    <div class="tooltip" id="mywhatsapp">Whatsapp</div>
+                    <span><i class="fab fa-whatsapp"></i></span>
+                  </div>
+        <!-- links -->
       </div>
     </div>
     <!-- ABOUT SECTION -->
-    <div></div>
+    <div class="about" id="about">
+      <div class="about-content">
+        <h1><span>A</span>bout&nbsp;Aashiq</h1>
+        <img src="/images/aashiq2.png" alt="photo of me">
+         <br><br>
+        
+        <h2>Backend/Fullstack Developer</h2><br>
+    
+        <p>
+          I am an open-minded analytical thinker with a passion for problem-solving. I am a flexible worker, capable of working in groups or alone. Currently, I am an aspiring Junior Developer hoping to get as much experience as possible toward becoming a Full Stack or Backend Developer. I believe I was born to be a Developer and have since added both leadership and professional development skills to my natural ability to grasp computer concepts.
+        </p>
+        <br><br>
+    
+        <h2>Passion for tech</h2><br>
+    
+        <p>Since a young age, I have been fascinated with figuring out how things work. As an adolescent, I took apart and rebuilt my first PC and have been hooked onto all things computer-related since then. Having honed my mathematical skill and understanding I have gained even more insight into how computers operate</p>
+        <br><br><br>
+      <h2>Programming Proficiency:
+      </h2>
+      <br><br>
+<div class="programming">
+  <div class="prog-section">
+    <h3>Python</h3>
+    <div class="progress-circle over50 p75">
+      <span>75%</span>
+      <div class="left-half-clipper">
+        <div class="first50-bar"></div>
+        <div class="value-bar"></div>
+      </div>
+    </div>
+    <h3>HTML</h3>
+    <div class="progress-circle over50 p70">
+       <span>70%</span>
+       <div class="left-half-clipper">
+          <div class="first50-bar"></div>
+          <div class="value-bar"></div>
+       </div>
+    </div>
+  </div>
+
+<div class="prog-section">
+  <h3>CSS</h3>
+  <div class="progress-circle over50 p65">
+    <span>65%</span>
+    <div class="left-half-clipper">
+        <div class="first50-bar"></div>
+        <div class="value-bar"></div>
+    </div>
+  </div>
+  <h3>JavaScript</h3>
+
+  <div class="progress-circle over50 p60">
+    <span>60%</span>
+    <div class="left-half-clipper">
+        <div class="first50-bar"></div>
+        <div class="value-bar"></div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
     <!-- PORTFOLIO SECTION -->
-    <div></div>
+    <div class="portfolio" id="portfolio">
+      <div class="portfolio-content"> 
+        <h1><span>P</span>ortfolio</h1><br>
+        <p>This is a slideshow showing some of the projects I worked on while learning to code in Python, HTML, CSS and JavaScript at Salesian Lifechoices. </p>
+<br><br>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="/images/jscalc.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="/images/lotto.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="/images/mathweb.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="/images/music.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="/images/sick.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="/images/weatherapi.png" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <br><br>
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="/images/jscalc.png" style="width:100%" onclick="currentSlide(1)" alt="Javascript Calculator">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/lotto.png" style="width:100%" onclick="currentSlide(2)" alt="Mathematics Curriculum Website">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/mathweb.png" style="width:100%" onclick="currentSlide(3)" alt="Swegga Fashion Website">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/music.png" style="width:100%" onclick="currentSlide(4)" alt="Python - Lotto app">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/sick.png" style="width:100%" onclick="currentSlide(5)" alt="Python - Weather app">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="/images/weatherapi.png" style="width:100%" onclick="currentSlide(6)" alt="Python - Music Player">
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <br><br><br>
     <!-- TESTIMONIAL SECTION -->
-    <div></div>
+    <div class="testimonial">
+      <div class="testimonial-content">
+        <h1><span>T</span>estimonials</h1>
+        <p>These are testimonials by people who know me</p>
+        <div class="line1">
+
+        </div>
+      </div>
+    </div>
     <!-- JAVASCRIPT LINKS-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" , src="javascript/main.js"></script>
+    <script src="javascript/main.js"></script>
   </body>
 </html>
