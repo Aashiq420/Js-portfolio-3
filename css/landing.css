@@ -63,6 +63,14 @@ a {
 .navbar a {
   color: #c9daea;
 }
+
+.new {
+  display: none;
+}
+
+#ham {
+  display: block;
+}
 .navbar a :hover {
   background-color: white;
   color: black;
@@ -98,7 +106,7 @@ header {
 .landing {
   margin-top: -6%;
   background: linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.7)),
-    url("/images/coding.jpg");
+    url("../images/coding.jpg");
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -107,7 +115,7 @@ header {
 }
 .landing h1 {
   font-size: 450%;
-  padding-top: 15%;
+  padding-top: 10%;
 }
 .landing h2 {
   font-size: 200%;
@@ -234,7 +242,15 @@ footer .wrapper {
   #menu {
     display: block;
   }
+
+  .new {
+    color: white;
+    margin-top: 50px;
+    width: 287px;
+    display: block;
+  }
 }
+
 /* small screen stuff */
 @media screen and (max-width: 850px) {
   .fullnav {

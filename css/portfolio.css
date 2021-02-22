@@ -1,25 +1,31 @@
 .portfolio {
-  background-color: gray;
-  margin-left: 5%;
-  margin-right: 5%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/portfolio-bg-2.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  /* margin-left: 5%;
+  margin-right: 5%; */
 }
 .portfolio-content {
   width: 100%;
   display: grid;
-  justify-content: space-between;
   place-items: center;
+  padding-bottom: 5%;
 }
 .portfolio-content span {
   color: red;
   text-shadow: 1px 1px black;
 }
 .portfolio-content h1 {
+  color: white;
   font-family: "Times New Roman", Times, serif;
   font-size: 200%;
   display: flex;
   justify-content: center;
 }
 .portfolio-content p {
+  color: white;
   font-size: 120%;
   width: 66%;
 }
@@ -44,7 +50,9 @@ img {
   height: 300px;
   object-fit: scale-down;
 }
-
+.mySlides img:hover {
+  opacity: 0.8;
+}
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
@@ -107,7 +115,10 @@ img {
   float: left;
   width: 16.66%;
 }
-
+.column img {
+  width: 10%;
+  height: 10%;
+}
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;

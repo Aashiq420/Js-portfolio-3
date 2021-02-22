@@ -11,7 +11,7 @@
   width: 100%;
 }
 .testimonial-content span {
-  color: red;
+  color: rgb(179, 0, 0);
   text-shadow: 1px 1px black;
 }
 .testimonial-content h1 {
