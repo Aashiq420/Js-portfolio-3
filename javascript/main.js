@@ -74,11 +74,13 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 // -------------------------------small screen thing
+
+// open menu
 function openMenu() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+  menu = document.getElementById("menu");
+  menu.style.display = "block";
+}
+function closeMenu() {
+  menu = document.getElementById("menu");
+  menu.style.display = "none";
 }
