@@ -69,6 +69,7 @@ a {
 } */
 .new button {
   font-size: 20px;
+  display: none;
 }
 .navbar a :hover {
   background-color: white;
@@ -317,6 +318,9 @@ footer .wrapper {
   }
   .logo span {
     font-size: 20px;
+  }
+  footer .wrapper {
+    width: 106%;
   }
 }
 /*  */
