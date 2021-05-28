@@ -53,13 +53,14 @@
   margin-left: 13%;
 }
 .about-left2 {
+  min-width: 50%;
   margin-right: 2%;
 }
 .about-left2 p {
   width: 87%;
 }
 .about-right2 {
-  margin-left: 5%;
+  margin-left: 13%;
   margin-right: 6%;
 }
 

@@ -1,3 +1,6 @@
+//animate on scroll initialization
+AOS.init();
+
 //hamburger
 function toggleNav() {
   const links = document.getElementById("navbar");
@@ -32,8 +35,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 950 ||
-    document.documentElement.scrollTop > 950
+    document.body.scrollTop > 650 ||
+    document.documentElement.scrollTop > 650
   ) {
     document.getElementById("fullnav").style.backgroundColor = "black";
   } else {

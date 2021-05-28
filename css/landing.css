@@ -42,23 +42,21 @@ a {
 /* end underline */
 /* navbar */
 .logo span b {
-  font-size: 50px;
+  font-size: 30px;
   color: red;
 }
 .logo span {
+  font-size: 20px;
   color: #c9daea;
 }
 .navbar ul {
-  margin-top: 10%;
   display: flex;
   list-style: none;
 }
 .navbar li {
   color: #c9daea;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 160%;
-  float: right;
-  padding: 25px 15px 15px 10px;
+  padding: 30px 15px 15px 10px;
+  font-size: 1.2em;
 }
 .navbar a {
   color: #c9daea;
@@ -81,24 +79,23 @@ a {
   padding-right: 20px;
 }
 .logo {
-  /* overflow: hidden; */
   white-space: nowrap;
   padding: 10px;
-  font-size: 40px;
-  padding: 3%;
+  padding: 2%;
 }
 
 header {
   background-color: red;
 }
 .fullnav {
+  top: 0;
   z-index: 5;
   display: flex;
   justify-content: space-between;
   position: fixed;
   background-color: transparent;
   width: 100%;
-  height: 12vh;
+  height: 10vh;
   padding-bottom: 20px;
 }
 /* end navbar */
