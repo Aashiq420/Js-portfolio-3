@@ -30,7 +30,7 @@
   width: 66%;
 }
 /*----------------------------- slideshow -----------------------------------------*/
-img {
+.card_image img {
   vertical-align: middle;
 }
 

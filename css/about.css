@@ -42,6 +42,9 @@
   justify-content: space-between;
   margin-left: 20%;
 }
+.about-left {
+  width: 100%;
+}
 .about-info2 {
   display: flex;
   justify-content: space-between;
@@ -170,7 +173,7 @@
 @media screen and (max-width: 1200px) {
   .about-content p {
     font-size: 100%;
-    width: 100%;
+    width: 89%;
   }
   .about-content h2 {
     font-size: 130%;
